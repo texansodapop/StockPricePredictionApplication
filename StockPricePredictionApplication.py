@@ -31,6 +31,7 @@ def train_ml_model(ml_model, epochs):
         if(user_input.lower() == "y"):
             ml_model.train_model(epochs)
             ml_model.test_model_predictions()
+            ml_model.final_model_predictions()
             is_asking = False
         elif(user_input.lower() == "n"):
             is_asking = False
@@ -46,7 +47,6 @@ def run_MLModel(stock):
         ml_model.create_model()
         epochs = int(input("How many epochs do you want to use to train the model? \n"))
         train_ml_model(ml_model, epochs)
-        ml_model.final_model_predictions()
     except:
         print("An exception occurred when creating the machine learning model")
 
