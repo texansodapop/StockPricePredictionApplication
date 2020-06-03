@@ -47,9 +47,9 @@ What is the x train size? (XXX)
 
 y train size = 30 and x train size = 730 means I want the program to use 730 days worth of stock data in order to predict the next 30 days. x train size is not the total size of your data but how many data points you want as an input in order to predict y number of data points. For APPL between 2010-01-01 and 2020-06-01, there are 2620 data points so a y train size = 30 and x train size = 730 means I am submitting a 3D array with (1831 sequences , 730 time steps, 1 feature) to train my model. For this example, the number of sequences is calculated by counting how many permutations of 760 consecutive data points you can create from the training data set. In short, sequence = total training dataset size - x train size - y train size + 1.
 
-Generally, the training size would be 80% of the data provided and the test size would be the last 20% of the data, but I set up the program where the training dataset size is equal to: data length - y train size. This might be a mistake, but I did it because it made the coding a little easier. I plan to add a functionality to make the test size adjustable will be added in the future. The number of features is fixed to 1 for now, specifically the stock "column" you chose to investigate. I plan to allow the user to use multiple features in the future too.
+Generally, the training size would be 80% of the data provided and the test size would be the last 20% of the data, but I set up the program where the training dataset size is equal to: data length - y train size. This might be a mistake, but I did it because it made the coding a little easier. I plan to add a functionality to make the test size adjustable. The number of features is fixed to 1 for now, specifically the stock "column" you chose to investigate. I plan to allow the user to use multiple features in the future too.
 
-The last two questions in the program ask about how many epochs you want use to train the model and a warning that the program might take a while + computational power to trian the model. The number of epochs determines how many times do you want to retrain the model using the same training dataset. More epochs usually increase the accuracy of the model, but it takes longer. I usually pick around 1-3 epochs:
+The last two questions ask about how many epochs you want use to train the model and a warning that the program might take a while + computational power to trian the model. The number of epochs determines how many times do you want to retrain the model using the same training dataset. More epochs usually increase the accuracy of the model, but it takes longer. I usually pick around 1-3 epochs:
 
 How many epochs do you want to use to train the model:
 
@@ -63,7 +63,7 @@ Epoch 1/3
 
 1831/1831 [==============================] - 801s 438ms/step - loss: 0.0042
 
-Once the program is complete, two plots will appear. The first plot is compares the predictions from the test dataset and the valid dataset. This is to attest the validity of the model. The second plot displays what the model predicts for y datapoints in the future.
+Once the program is complete, two plots will appear. The first plot compares the predictions from the test dataset and the valid dataset. This is to attest the validity of the model. The second plot displays what the model predicts for y datapoints in the future.
 
 The program will ask you if you want to try retry:
 
