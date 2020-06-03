@@ -29,7 +29,7 @@ What is the end date? (YYYYMMDD)
 
 2020-06-01
 
-The fourth question ask you what feature in the stock you want to look at. Yahoo only provides the High, Low, Open, Close, Volume and Adj Close:
+The fourth question asks what stock feature you want to look at. Yahoo only provides the High, Low, Open, Close, Volume and Adj Close:
 
 What column are you interested in? (High, Low, Close, Open, Volume, Adj Close)
 
