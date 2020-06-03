@@ -1,6 +1,8 @@
 # StockPricePredictionApplication
 This application is meant to predict a stock feature value x number of days later using LSTM recurrent neural network machine learning architecture. The code is solely based on python and uses the following packages: keras, pandas_datareader, numpy, matplotlib, and sklearn.
 
+This program needs the MLModel.py, Stock.py and StockPricePredictionApplication.py files to work. If you want to import this into a python project, simply add these files to the project. For the program to work, the above packages need to be installed.
+
 To use this program, download all the python scripts and run the StockPricePredictionApplication.py file:
 
 c:\_\_\>python StockPricePredictionApplication.py
