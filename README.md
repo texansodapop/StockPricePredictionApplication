@@ -35,7 +35,7 @@ What column are you interested in? (High, Low, Close, Open, Volume, Adj Close)
 
 Close
 
-It might take the program a few minutes to collect the data, but once it is loaded, a plot will appear with your data showing. The next collection of questions are aimed towards setting up the parameters for the machine learning model. The model needs to be trained using a subset of the data. LSTM utilizes 3D arrays set up as (sequences, time steps, features). The first and second question asks for the size of the y train and x train sizes. These sizes are refering to the "time steps" attribute for the 3D arrays that will be submitted to the machine learning model. Provide your what you'd like to test. For example:
+It might take the program a few minutes to collect the data, but once it is loaded, a plot will appear with your data showing. The next collection of questions are aimed towards setting up the parameters for the machine learning model. The model needs to be trained using a subset of the data. LSTM utilizes 3D arrays set up as (sequences, time steps, features). The first and second question asks for the size of the y train and x train sizes. These sizes are refering to the "time steps" attribute for the 3D arrays that will be submitted to the machine learning model. For example:
 
 What is the y train size? (XXX)
 
