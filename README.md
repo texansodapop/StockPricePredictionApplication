@@ -7,11 +7,11 @@ To use this program, download all the python scripts and run the StockPricePredi
 
 c:\_\_\>python StockPricePredictionApplication.py
 
-Next, the program will ask for the name of the stock you want to investigate. For instance, Apple stock is APPL or Kellogg stock is K:
+Next, the program will ask for the name of the stock you want to investigate. For instance, Apple stock is AAPL or Kellogg stock is K:
 
 What is the name of the stock?
 
-APPL
+AAPL
 
 The second and third questions are date parameters for what stock to grab from the Yahoo stock database. The dates are accepted in two forms (as far as I know): YYYYMMDD or YYYY-MM-DD
 
